@@ -1,7 +1,7 @@
 {
     "HELLO": "Hey, I'm so glad you set ZeBot up!",
     "TWITTER": "Let's tweet @ jcangomes",
-    "Goodnight%": "Goodnight!",
+    "<Goodnight%": "Goodnight!",
     "I LOVE YOU": "José loves you more!",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, ZeBot is back."
