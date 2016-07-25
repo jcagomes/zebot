@@ -7,7 +7,7 @@ const scriptRules = require('./script.json');
 
 module.exports = new Script({
     processing: {
-        prompt: (bot) => bot.say('Beep boop...'),
+        //prompt: (bot) => bot.say('Beep boop...'),
         receive: () => 'processing'
     },
 
@@ -58,12 +58,12 @@ module.exports = new Script({
                             return bot.say(line);
                         });
                     } else {
-                        // p = p.then(function() {
-                        //     var start = line.indexOf("'") + 1;
-                        //     var end = line.lastIndexOf("'");
-                        //     var imageFile = line.substring(start, end);
-                        //     return bot.sendImage(imageFile);
-                        // });
+                         p = p.then(function() {
+                             var start = line.indexOf("'") + 1;
+                             var end = line.lastIndexOf("'");
+                             var imageFile = line.substring(start, end);
+                             return bot.sendImage(imageFile);
+                         });
                     }
                 })
 
